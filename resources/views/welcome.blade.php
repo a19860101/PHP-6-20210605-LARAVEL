@@ -64,7 +64,6 @@
         </style>
     </head>
     <body>
-    {{public_path()}}
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -82,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel 12345 123
+                    HELLO HEROKU !!!
                 </div>
 
                 <div class="links">

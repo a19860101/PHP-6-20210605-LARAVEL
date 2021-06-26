@@ -40,3 +40,20 @@ git add .
 git status
 # 查看目前檔案狀態
 ```
+
+### 提交
+
+所有檔案確認加入暫存之後，即可提交到儲存庫
+
+```bash
+git commit -m "your message"
+```
+
+### 查看紀錄
+
+```bash
+git log
+
+git reflog
+
+```

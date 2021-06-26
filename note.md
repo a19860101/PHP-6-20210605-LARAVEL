@@ -87,11 +87,31 @@ git reflog
 
 ### 上傳流程
 
-建立Procfile，並輸入下列指令
-```
-web: vendor/bin/heroku-apache-php2 public/
-```
+1. 建立Procfile，並輸入下列指令
 
-> 注意首字P要大寫
+    ```proc
+    web: vendor/bin/heroku-apache-php2 public/
+    ```
 
+    > 注意首字P要大寫
 
+2. 建立heroku專案
+
+    ```bash
+    heroku login
+    #登入heroku
+
+    heroku create
+    #建立專案
+    ```
+
+3. 上傳
+
+    ```bash
+    git add .
+    git commit -m "your message"
+
+    git push heroku master
+    # 上傳到heroku
+    ```
+    > 若有修改重複步驟三即可
